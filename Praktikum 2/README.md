@@ -84,3 +84,72 @@ Contoh:
 
 ```sql
 ST_GeomFromText('LINESTRING(105.xxx -5.xxx, ...)', 4326)
+
+3️⃣ Validasi Data Spasial
+
+Dilakukan pengujian menggunakan:
+
+ST_AsText()
+
+ST_AsGeoJSON()
+
+ST_IsValid()
+
+Contoh query:
+
+SELECT 
+    id,
+    nama,
+    ST_AsText(geom),
+    ST_AsGeoJSON(geom),
+    ST_IsValid(geom)
+FROM wilayah;
+
+
+Hasil menunjukkan seluruh geometri bernilai true, sehingga data dinyatakan valid.
+
+4️⃣ Visualisasi di QGIS
+
+Menghubungkan PostgreSQL ke QGIS
+
+Menambahkan layer:
+
+jalan
+
+wilayah
+
+fasilitas_publik
+
+Menampilkan dalam layer berbeda
+
+Mengatur simbologi (warna & ketebalan garis)
+
+📊 Hasil
+
+Data jalan berhasil dibuat dalam bentuk LineString
+
+Data wilayah berhasil dibuat dalam bentuk Polygon
+
+Data fasilitas publik dalam bentuk Point
+
+Semua data berhasil divalidasi dan divisualisasikan
+
+Seluruh geometri valid (ST_IsValid = true)
+
+📂 Struktur Repository
+praktikum2-postgis/
+│
+├── README.md
+├── sql/
+│   └── praktikum2.sql
+│
+├── laporan/
+│   └── Praktikum2_SIG_123140201_Awi.pdf
+│
+├── screenshots/
+│   ├── jalan_qgis.png
+│   ├── wilayah_qgis.png
+│   ├── validasi_query.png
+│
+└── data/
+    └── backup_database.sql
