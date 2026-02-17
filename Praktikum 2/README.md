@@ -84,6 +84,7 @@ Contoh:
 
 ```sql
 ST_GeomFromText('LINESTRING(105.xxx -5.xxx, ...)', 4326)
+```
 
 3️⃣ Validasi Data Spasial
 
