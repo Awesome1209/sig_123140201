@@ -79,9 +79,9 @@ Setiap data memiliki atribut:
 
 ## Struktur Project
 
-### Backend (`tugas7sig`)
+### Backend (`tugas7sig`) / (`webgis-backend`)
 ```bash
-tugas7sig/
+tugas7sig/ atau (`webgis-backend`)/
 ├── main.py
 ├── database.py
 ├── models.py
