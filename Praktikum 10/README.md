@@ -6,8 +6,8 @@ Sistem ini merupakan implementasi *end-to-end* yang menggabungkan teknologi **Ke
 ---
 
 ## 👨‍💻 Kontributor
-**[Awi Septian Prasetyo]**  
-**NIM: [123140201]**  
+**Awi Septian Prasetyo**  
+**NIM: 123140201**  
 Program Studi Teknik Informatika - Institut Teknologi Sumatera (ITERA)
 
 
